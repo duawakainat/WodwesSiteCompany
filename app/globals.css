@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    border: 1px solid yellow
+
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.slide_Text [data-v-b3b5a19d]{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    animation-name: Word_MoveY;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-duration: 7s;
+}
+@keyframes Word_MoveY {
+    0% ,27%   {transform: translateY(0);}
+    33%, 60%  {transform: translateY(-25%);}
+    66%, 93%  {transform: translateY(-50%);}
+    100% {transform: translateY(-75%);}
+  }
+  .active{
+    display: block;
+  }
+  .project-tile{
+    display: none;
+  }
+  .activeBtn{
+    border-bottom: 2px solid #f62c73;
+    color: #f62c73;
+  }
+  .active-content{
+    display: block;
+  }
+ .slide_width{
+  width: 90%;
+ }
+ .slick-prev_1{
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 40%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: black;
+    border: none;
+    outline: none;
+    left: -40px;
+    background: transparent;
+ }
+ @media (min-width: 300px) and (max-width: 778px) {
+  .slick-prev_1{
+    line-height: 0;
+    position: absolute;
+    bottom: 0;
+    top: 70%;
+   left: 40%;
+   margin-top: 48px;
+  }
+}
+ .slick-prev_2{
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 40%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  transform: translate(0, -50%);
+  cursor: pointer;
+  color: black;
+  border: none;
+  outline: none;
+ right: -20px;
+  background: transparent;
+}
+@media (min-width: 300px) and (max-width: 778px) {
+  .slick-prev_2{
+    line-height: 0;
+    position: absolute;
+    bottom: 0;
+    top: 70%;
+   right: 40%;
+   margin-top: 48px;
+  }
+}
+.cool-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 1px;
+  background: #f62c73;
+  transition: width .3s;
+}
+
+.cool-link:hover::after {
+  width: 100%;
+  color: #f62c73;
+}
+.slickmain{
+  border-right: 1px solid red;
+}
