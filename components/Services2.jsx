@@ -23,7 +23,7 @@ const PassValue = ({ title, author, title2 }) => {
   return (
     <div className="relative py-16 md:pt-28 md:pb-36">
       <Image
-        src="/Banner-22ae39b2 (1).png"
+        src="/Banner-22ae39.png"
         className="absolute inset-0 -z-10 object-cover h-full w-full"
         width={0}
         height={0}

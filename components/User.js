@@ -62,13 +62,13 @@ export const User = [
       "WODWES has established itself to be the industry-leading Joomla development company for delivering exceptional Joomla-based solutions. We consider our clients our utmost priority and support and provide them with all the Joomla–built solutions, thriving their businesses on the web.",
     SlideImage: [
       {
-        img: ImageSS3,
+        img: ImageSS22,
       },
       {
         img: ImageSS2,
       },
       {
-        img: ImageSS6,
+        img: ImageSS24,
       },
     ],
     links: [
@@ -191,7 +191,7 @@ export const User = [
     ],
     navItems: [
       {
-        image: ImageSS20,
+        image: ImageSS12,
         links: [
           {
             h3Title: "+6%",
@@ -209,7 +209,7 @@ export const User = [
         ],
       },
       {
-        image: ImageSS22,
+        image: ImageSS16,
         links: [
           {
             h3Title: "+6%",
@@ -268,22 +268,16 @@ export const User = [
       "WODWES is a reliable and experienced BigCommerce development company.They offer a wide range of BigCommerce services, including customization, migration, and maintenance.Their team of experts can help you create a successful online store that meets your unique business needs.",
     SlideImage: [
       {
-        img: ImageSS14,
+        img: ImageSS23,
       },
       {
-        img: ImageSS2,
+        img: ImageSS22,
       },
       {
-        img: ImageSS9,
+        img: ImageSS20,
       },
       {
-        img: ImageSS4,
-      },
-      {
-        img: ImageSS12,
-      },
-      {
-        img: ImageSS13,
+        img: ImageSS22,
       },
     ],
     links: [
@@ -406,7 +400,7 @@ export const User = [
     ],
     navItems: [
       {
-        image: ImageSS23,
+        image: ImageSS13,
         links: [
           {
             h3Title: "+6%",
@@ -424,7 +418,7 @@ export const User = [
         ],
       },
       {
-        image: ImageS2,
+        image: ImageS9,
         links: [
           {
             h3Title: "+6%",
@@ -443,7 +437,24 @@ export const User = [
         ],
       },
       {
-        image: ImageS3,
+        image: ImageS14,
+        links: [
+          {
+            h3Title: "+7.5%",
+            paraD: "Empowering Growth",
+          },
+          {
+            h3Title: "+7%",
+            paraD: "User Saticfaction",
+          },
+          {
+            h3Title: "User Technology",
+            img: ImagePhp,
+          },
+        ],
+      },
+      {
+        image: ImageSS7,
         links: [
           {
             h3Title: "+7.5%",
@@ -483,10 +494,10 @@ export const User = [
       "WODWES has established itself as the industry-leading platform for Drupal development services and our renowned clientele and portfolio are speaking proof of it. Whether you need Drupal-based development, migration, integration, or need help with compelling design solutions, we have you covered.",
     SlideImage: [
       {
-        img: ImageSS11,
+        img: ImageSS22,
       },
       {
-        img: ImageSS12,
+        img: ImageSS24,
       },
     ],
     links: [
@@ -618,7 +629,7 @@ export const User = [
     ],
     navItems: [
       {
-        image: ImageSS24,
+        image: ImageSS2,
         links: [
           {
             h3Title: "+6%",
@@ -636,7 +647,7 @@ export const User = [
         ],
       },
       {
-        image: ImageS2,
+        image: ImageSS3,
         links: [
           {
             h3Title: "+6%",
@@ -651,23 +662,6 @@ export const User = [
             img: ImagePhp,
             img1: ImageWordpress,
             img2: ImageHubspot,
-          },
-        ],
-      },
-      {
-        image: ImageSS20,
-        links: [
-          {
-            h3Title: "+7.5%",
-            paraD: "Empowering Growth",
-          },
-          {
-            h3Title: "+7%",
-            paraD: "User Saticfaction",
-          },
-          {
-            h3Title: "User Technology",
-            img: ImagePhp,
           },
         ],
       },
@@ -694,13 +688,13 @@ export const User = [
       "WODWES is a dependable digital agency that specializes in WordPress services such as web design, development, and maintenance. They have a skilled team committed to providing top-quality solutions, emphasizing customer satisfaction, attention to detail, and timely delivery.WODWES is the industry-best provider of Magento development solutions customized to your business's exact needs. With years of providing Magento-based solutions to startups, enterprises, and small businesses, we claim to transform the landscape of multiple renowned businesses.",
     SlideImage: [
       {
-        img: ImageSS16,
+        img: ImageSS22,
       },
       {
-        img: ImageSS7,
+        img: ImageSS20,
       },
       {
-        img: ImageSS8,
+        img: ImageSS24,
       },
     ],
     links: [
@@ -904,7 +898,7 @@ export const User = [
       "WODWES is a dependable digital agency that specializes in WordPress services such as web design, development, and maintenance. They have a skilled team committed to providing top-quality solutions, emphasizing customer satisfaction, attention to detail, and timely delivery.",
     SlideImage: [
       {
-        img: ImageSS1,
+        img: ImageSS21,
       },
     ],
     links: [
@@ -1219,7 +1213,7 @@ export const User = [
         ],
       },
       {
-        image: ImageS2,
+        image: ImageSS21,
         links: [
           {
             h3Title: "+6%",
@@ -1279,16 +1273,16 @@ export const User = [
       "WODWES is a state-of-the-art provider of Vue.js development services. With a proven track record of digitally transforming startups, small businesses, and large-scale enterprises, we confidently claim that we meet the highest technology standards in creating top-notch Vue.Js products. Our dedicated Vue.Js developers use a result-driven approach to create user-oriented software products that drive maximum leads and conversions.",
     SlideImage: [
       {
-        img: ImageSS16,
+        img: ImageSS22,
       },
       {
-        img: ImageSS12,
+        img: ImageSS20,
       },
       {
-        img: ImageSS3,
+        img: ImageSS24,
       },
       {
-        img: ImageSS1,
+        img: ImageSS23,
       },
     ],
     links: [
@@ -1464,6 +1458,23 @@ export const User = [
           },
         ],
       },
+      {
+        image: ImageSS13,
+        links: [
+          {
+            h3Title: "+7.5%",
+            paraD: "Empowering Growth",
+          },
+          {
+            h3Title: "+7%",
+            paraD: "User Saticfaction",
+          },
+          {
+            h3Title: "User Technology",
+            img: ImagePhp,
+          },
+        ],
+      },
     ],
   },
 
@@ -1489,10 +1500,10 @@ export const User = [
       "WODWES has established itself to be a cutting-edge provider of React development solutions. Leveraging our collaborative work approach, we partner up with you to fully understand and analyze your business goals and needs to devise the right React development solution to digitally take your business to the path of growth.",
     SlideImage: [
       {
-        img: ImageSS2,
+        img: ImageSS22,
       },
       {
-        img: ImageSS3,
+        img: ImageSS23,
       },
     ],
     links: [
@@ -1678,16 +1689,16 @@ export const User = [
       "Wodwes is a leading software development company with expertise in MERN stack development services.They have a team of skilled developers who are proficient in building complex and scalable web applications using MERN stack.With a client-centric approach and a commitment to delivering quality solutions, Wodwes is a trusted partner for MERN stack development projects.",
     SlideImage: [
       {
-        img: ImageSS3,
+        img: ImageSS23,
       },
       {
-        img: ImageSS1,
+        img: ImageSS24,
       },
       {
-        img: ImageSS2,
+        img: ImageSS20,
       },
       {
-        img: ImageSS3,
+        img: ImageSS21,
       },
     ],
     links: [
@@ -1833,7 +1844,7 @@ export const User = [
         ],
       },
       {
-        image: ImageS1,
+        image: ImageSS12,
         links: [
           {
             h3Title: "+6%",
@@ -1851,7 +1862,7 @@ export const User = [
         ],
       },
       {
-        image: ImageS2,
+        image: ImageSS15,
         links: [
           {
             h3Title: "+6%",
@@ -2142,12 +2153,6 @@ export const User = [
       {
         img: ImageSS11,
       },
-      // {
-      //   img: ImageSS2,
-      // },
-      // {
-      //   img: ImageSS3,
-      // },
     ],
     links: [
       {
@@ -2299,7 +2304,7 @@ export const User = [
         ],
       },
       {
-        image: ImageS1,
+        image: ImageSS12,
         links: [
           {
             h3Title: "+6%",

@@ -27,7 +27,7 @@ import CMSI6 from "@/public/CMSImage/woocommerce-840e7255.png";
 import CMSI7 from "@/public/CMSImage/wordpress-1d5620e2.png";
 const Table = [
   {
-    index: "1",
+    index: 0,
     Image1: ImageF1,
     Image2: ImageF2,
     Image3: ImageF3,
@@ -38,7 +38,7 @@ const Table = [
     active: true,
   },
   {
-    index: "2",
+    index: 1,
     Image1: BackI1,
     Image2: BackI2,
     Image3: BackI3,
@@ -49,7 +49,7 @@ const Table = [
     active: true,
   },
   {
-    index: "3",
+    index: 2,
     Image1: CMSI1,
     Image2: CMSI2,
     Image3: CMSI3,
@@ -62,7 +62,7 @@ const Table = [
 ];
 
 const Section10 = () => {
-  const [active, setActive] = useState(1);
+  const [active, setActive] = useState(0);
   console.log(active);
   const Toogle = (active) => {
     setActive(active);
@@ -72,7 +72,7 @@ const Section10 = () => {
       console.log(active);
       return className;
     } else {
-      ("");
+      return '';
     }
   };
   return (
@@ -98,36 +98,35 @@ const Section10 = () => {
           <div className="flex justify-between md:my-14 my-10 gap-4 max-[343px]:gap-1">
             <button
               className={`text-[20px] max-[578px]:text-sm font-[600] duration-[300] hover:text-[#f62c73] ${getActiveClass(
+                0,
+                "activeBtn"
+              )}`}
+              id="0"
+              onClick={() => Toogle(0)}
+            >
+              Frontend Technologies
+            </button>
+            <button
+              className={`text-[20px] max-[578px]:text-sm font-[600] duration-[300] hover:text-[#f62c73] ${getActiveClass(
                 1,
                 "activeBtn"
               )}`}
               id="1"
               onClick={() => Toogle(1)}
             >
-              Frontend Technologies
+              Back-end Technologies
             </button>
             <button
               className={`text-[20px] max-[578px]:text-sm font-[600] duration-[300] hover:text-[#f62c73] ${getActiveClass(
                 2,
                 "activeBtn"
               )}`}
-              id="2"
+              id="0"
               onClick={() => Toogle(2)}
-            >
-              Back-end Technologies
-            </button>
-            <button
-              className={`text-[20px] max-[578px]:text-sm font-[600] duration-[300] hover:text-[#f62c73] ${getActiveClass(
-                3,
-                "activeBtn"
-              )}`}
-              id="3"
-              onClick={() => Toogle(3)}
             >
               CMS technologies
             </button>
           </div>
-          {active && (
             <div className="flex flex-wrap justify-center lg:max-w-[896px] max-w-[700px] lg:gap-x-40 gap-10 md:gap-x-20 lg:gap-y-20 md:gap-y-14 mx-auto">
               <div className="w-20 h-20 rounded-full flex justify-center items-center shadow-[0px_4px_6px_rgba(39,40,33,.19)]">
                 {" "}
@@ -194,7 +193,6 @@ const Section10 = () => {
                 />
               </div>{" "}
             </div>
-          )}
         </div>
       </div>
     </div>
