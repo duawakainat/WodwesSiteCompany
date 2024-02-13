@@ -2,9 +2,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Services from "@/app/services/page";
-// import ServicesToggle from "./ServicesToggle";
-// import Products from "./PassValue";
-// import NavbarToggle from "./ServicesToggle";
+
 import IndustryToogle from "./IndustryToogle";
 import NavbarToogle1 from "./NavbarToogle3";
 import Link from "next/link";

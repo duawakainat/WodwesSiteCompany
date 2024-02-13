@@ -3,7 +3,7 @@ import { React, Component } from "react";
 import Image from "next/image";
 import { User } from "@/components/User";
 import Section4 from "@/app/home/Section4";
-import PassValue from "@/components/PassValue";
+import PassValue from "@/components/Services2";
 import Services3 from "@/components/Services3";
 import Services4 from "@/components/Services4";
 import Sub_Services5 from "@/components/Sub_Services5";
@@ -17,7 +17,7 @@ import Section7 from "@/app/home/Section7";
 import Services7 from "@/components/Services7";
 import { useState } from "react";
 const ImgSlect = User.map((menu) => menu.SlideImage);
-const page = ({ params }) => {
+const Page = ({ params }) => {
   var settings = {
     dots: false,
     infinite: false,
@@ -135,7 +135,7 @@ const page = ({ params }) => {
       </div>
     );
   }
-  
+
   const settings3 = {
     dots: false,
     infinite: true,
@@ -150,10 +150,10 @@ const page = ({ params }) => {
           slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
-          dots: true
-        }
-      },],
-  
+          dots: true,
+        },
+      },
+    ],
   };
   const settings2 = {
     dots: false,
@@ -178,6 +178,7 @@ const page = ({ params }) => {
                 title={menu.title}
                 author={menu.author}
                 publicationDate={menu.publicationDate}
+                title2={menu.title2}
               />
               <Section4 />
               <Services3 choosePara={menu.choosePara} choose={menu.choose} />
@@ -276,77 +277,91 @@ const page = ({ params }) => {
               </div>
               {/* <div> */}
               {menu.navItems && (
-                <Slider
-                  asNavFor={nav2}
-                  ref={(slider1) => setNav1(slider1)}
-                  {...settings2}
-                >
-                  {menu.navItems.map((item, index) => {
-                    return (
-                      <div key={index}>
-                        <div className="w-[90%] mx-auto">
-                          <div className="flex max-md:flex-col pb-10 items-center gap-10 justify-center w-[90%] mx-auto grid-cols-[300px_auto] order-2 xl:gap-[160px]">
-                            <div className="md:flex flex-col grid grid-cols-2 order-2 md:order-none max-sm:order-2 w-full h-full gap-10 md:max-w-[300px]">
-                              {item.links.map((items, index) => {
-                                return (
-                                  <div key={index} className="">
-                                    <div className="block">
-                                      <h3 className="text-[20px] md:max-w-[300px] font-bold pl-3 border-l-2 border-[#f62c73] rounded-sm">
-                                        {items.h3Title}
-                                      </h3>
-                                      <p className="text-sm mt-2 pl-[18px] text-[#272821]">
-                                        {items.paraD}
-                                      </p>
-                                      <div className="flex flex-wrap items-center gap-4">
-                                        {" "}
-                                        {items.img && (
-                                          <Image
-                                            src={items.img}
-                                            width={0}
-                                            alt="image"
-                                            height={0}
-                                            className="w-10 h-10 object-contain"
-                                          />
-                                        )}
-                                        {items.img2 && (
-                                          <Image
-                                            src={items.img2}
-                                            width={0}
-                                            height={0}
-                                            alt="image"
-                                            className="w-10 h-10 object-contain"
-                                          />
-                                        )}
-                                        {items.img1 && (
-                                          <Image
-                                            src={items.img1}
-                                            width={0}
-                                            alt="image"
-                                            height={0}
-                                            className="w-10 h-10 object-cover"
-                                          />
-                                        )}
-                                      </div>
-                                    </div>{" "}
-                                  </div>
-                                );
-                              })}
-                            </div>
-                            <div className="w-full h-full">
-                              <Image
-                                src={item.image}
-                                width={0}
-                                height={0}
-                                alt="image"
-                                className="w-100 md:h-[480px] h-[300px]"
-                              />
+                <div>
+                  <div className="w-[90%] mx-auto">
+                    <h2 className="text-[30px] tracking-tighter mb-3 font-[700]">
+                      Frequently Asked{" "}
+                      <span className="text-[#f62c73] font-[700]">
+                        {""} Questions!
+                      </span>
+                    </h2>
+                    <p className="text-[16px] mb-7 mt-4 text-[#272821]">
+                      We love hearing about how our work has helped businesses
+                      succeed and how WODWES became
+                    </p>
+                  </div>
+                  <Slider
+                    asNavFor={nav2}
+                    ref={(slider1) => setNav1(slider1)}
+                    {...settings2}
+                  >
+                    {menu.navItems.map((item, index) => {
+                      return (
+                        <div key={index}>
+                          <div className="w-[90%] mx-auto">
+                            <div className="flex max-md:flex-col pb-10 items-center gap-10 justify-center w-[90%] mx-auto grid-cols-[300px_auto] order-2 xl:gap-[160px]">
+                              <div className="md:flex flex-col grid grid-cols-2 order-2 md:order-none max-sm:order-2 w-full h-full gap-10 md:max-w-[300px]">
+                                {item.links.map((items, index) => {
+                                  return (
+                                    <div key={index} className="">
+                                      <div className="block">
+                                        <h3 className="text-[20px] md:max-w-[300px] font-bold pl-3 border-l-2 border-[#f62c73] rounded-sm">
+                                          {items.h3Title}
+                                        </h3>
+                                        <p className="text-sm mt-2 pl-[18px] text-[#272821]">
+                                          {items.paraD}
+                                        </p>
+                                        <div className="flex flex-wrap items-center gap-4">
+                                          {" "}
+                                          {items.img && (
+                                            <Image
+                                              src={items.img}
+                                              width={0}
+                                              alt="image"
+                                              height={0}
+                                              className="w-10 h-10 object-contain"
+                                            />
+                                          )}
+                                          {items.img2 && (
+                                            <Image
+                                              src={items.img2}
+                                              width={0}
+                                              height={0}
+                                              alt="image"
+                                              className="w-10 h-10 object-contain"
+                                            />
+                                          )}
+                                          {items.img1 && (
+                                            <Image
+                                              src={items.img1}
+                                              width={0}
+                                              alt="image"
+                                              height={0}
+                                              className="w-10 h-10 object-cover"
+                                            />
+                                          )}
+                                        </div>
+                                      </div>{" "}
+                                    </div>
+                                  );
+                                })}
+                              </div>
+                              <div className="w-full h-full">
+                                <Image
+                                  src={item.image}
+                                  width={0}
+                                  height={0}
+                                  alt="image"
+                                  className="w-100 md:h-[480px] h-[300px]"
+                                />
+                              </div>
                             </div>
                           </div>
                         </div>
-                      </div>
-                    );
-                  })}
-                </Slider>
+                      );
+                    })}
+                  </Slider>
+                </div>
               )}
               {menu.SlideImage && (
                 <div className="w-[90%] mx-auto">
@@ -362,7 +377,10 @@ const page = ({ params }) => {
                         {menu.SlideImage.map((items, index) => {
                           return (
                             <>
-                              <li key={index} className="px-5 py-2 md:p-5 lg:p-7 xl:p-10 border-r">
+                              <li
+                                key={index}
+                                className="px-5 py-2 md:p-5 lg:p-7 xl:p-10 border-r"
+                              >
                                 <Image
                                   src={items.img}
                                   width={0}
@@ -386,4 +404,4 @@ const page = ({ params }) => {
   );
 };
 
-export default page;
+export default Page;

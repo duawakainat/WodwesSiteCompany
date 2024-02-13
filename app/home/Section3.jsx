@@ -7,7 +7,7 @@ const Section3 = () => {
   const [counterState2, setCounter2] = useState(0);
   let timer;
   let counter = 0;
-  React.useEffect(() => {
+  useEffect(() => {
     clearInterval(timer);
     timer = setInterval(() => {
       if (counterState === 60) {
@@ -22,7 +22,7 @@ const Section3 = () => {
   }, [counterState]);
   let timerT;
   let counterT = 0;
-  React.useEffect(() => {
+  useEffect(() => {
     clearInterval(timerT);
     timerT = setInterval(() => {
       if (counterState2 === 90) {
@@ -52,13 +52,13 @@ const Section3 = () => {
           and leave a lasting impact. We blend creativity and technology to
           build digital experiences that bridge the gap between vision and
           reality. We believe in collaboration, quality, and exceeding
-          expectations. With us, you'll find a partner committed to transforming
+          expectations. With us, you ll find a partner committed to transforming
           your ideas into digital success stories and helping you thrive in
-          today's interconnected world.
+          todays interconnected world.
         </p>
         <div className="">
           <a className="hover:bg-[#f62c73] text-black hover:text-white border-2 border-[#f62c73] bg-transparent w-[200px] font-[600] py-3 px-5 flex justify-center items-center">
-            Let's Talk
+            Let is Talk
           </a>
         </div>
       </div>

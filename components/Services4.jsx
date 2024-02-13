@@ -11,7 +11,9 @@ const Services4 = ({ label, para, li1, li2, li3, image }) => {
           alt="image"
           className="w-8 h-8"
         />{" "}
-        <h3 className="xl:text-[24px] text-[20px] max-[450px]:text-[18px] font-bold leading-6">{label}</h3>
+        <h3 className="xl:text-[24px] text-[20px] max-[450px]:text-[18px] font-bold leading-6">
+          {label}
+        </h3>
       </div>
       <p className="text-sm leading-7 sm:my-7 my-5 text-[#272821]">{para}</p>
       <ul className="list-disc ml-6 mb-4">

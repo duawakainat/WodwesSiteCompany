@@ -5,7 +5,7 @@ const Table = [
     index: "1",
     h3Title: "Product Design",
     para:
-      "Elevate your product's appeal and functionality with our design expertise. We create innovative and user-centric solutions that captivate and deliver results.",
+      "Elevate your products appeal and functionality with our design expertise. We create innovative and user-centric solutions that captivate and deliver results.",
   },
   {
     index: "2",
@@ -39,12 +39,12 @@ const Setion8 = () => {
             We craft solutions that resonate with your audience, fuel growth,
             and elevate your brand. Expect meticulous attention to detail,
             seamless user experiences, and a creative spark that sets you apart
-            in today's competitive landscape. We're your partners in turning
+            in todays competitive landscape. We are your partners in turning
             ideas into tangible success stories
           </p>
           <div className="">
             <a className="hover:bg-[#f62c73] text-black hover:text-white border-2 border-[#f62c73] bg-transparent w-[200px] font-[600] py-3 px-5 flex justify-center items-center">
-              Let's Talk
+              Let is Talk
             </a>
           </div>
         </div>
@@ -52,18 +52,19 @@ const Setion8 = () => {
       <div className="grid lg:grid-cols-1  xl:grid-cols-2 grid-cols-2 max-[578px]:grid-cols-1 gap-5">
         {Table.map((menu, index) => {
           return (
-            <div>
-            <div className="p-5 bg-[#f8f8f8] group/item group/edit group-hover/item:bg-[rgba(39,40,33 ,1]  rounded-[10px]">
-              <Image
-              alt="image"
-                src="/full-stack-c89c521a.png"
-                width={36}
-                height={36}
-                className="w-9 h-9"
-              />
-              <h3 className="text-[18px] font-[700] my-5">{menu.h3Title}</h3>
-              <p className="text-[14px] text-[#272821]">{menu.para}</p>
-            </div></div>
+            <div key={index}>
+              <div className="p-5 bg-[#f8f8f8] group/item group/edit group-hover/item:bg-[rgba(39,40,33 ,1]  rounded-[10px]">
+                <Image
+                  alt="image"
+                  src="/full-stack-c89c521a.png"
+                  width={36}
+                  height={36}
+                  className="w-9 h-9"
+                />
+                <h3 className="text-[18px] font-[700] my-5">{menu.h3Title}</h3>
+                <p className="text-[14px] text-[#272821]">{menu.para}</p>
+              </div>
+            </div>
           );
         })}
       </div>

@@ -42,11 +42,22 @@ import ImageSS24 from "@/public/vodlix.webp";
 export const User = [
   {
     index: "Joomla-Development",
-    title: "Joomla Development Services",
+    title2: "Joomla",
+    title: " Development Services",
     author:
       "We deliver top-grade, high-performing, and scalable Joomla-built sites, apps, and portals with our proven methodologies and best-in-breed tech stack. Having thrived startups, small businesses, and enterprises with our smart Joomla-based transformation, we are your authorized partner for Joomla development services. From providing comprehensive consultancy to Joomla-amateur organizations to offering expert improvement and maintenance to Joomla-developed sites, we help conceptualize, develop, maintain, or deploy anything Joomla.",
     publicationDate: "1960-07-11",
-    choose: "Why Choose WODWES for Joomla Development Services?",
+    choose: (
+      <div className="text-[30px] text-[#272821] mb-7 font-[700]">
+        {" "}
+        Why Choose{" "}
+        <span className="font-[700]" style={{ color: "#f62c73" }}>
+          {" "}
+          WODWES
+        </span>{" "}
+        Joomla Development Services?
+      </div>
+    ),
     choosePara:
       "WODWES has established itself to be the industry-leading Joomla development company for delivering exceptional Joomla-based solutions. We consider our clients our utmost priority and support and provide them with all the Joomla–built solutions, thriving their businesses on the web.",
     SlideImage: [
@@ -59,7 +70,6 @@ export const User = [
       {
         img: ImageSS6,
       },
-     
     ],
     links: [
       {
@@ -238,11 +248,22 @@ export const User = [
   },
   {
     index: "BigCommerce-Development",
-    title: "BigCommerce Services",
+    title2: "BigCommerce",
+    title: " Services",
     author:
       "We are pleased to welcome you to the BigCommerce WODWES Services page! Our team of experts is here to provide you with top-notch services that will help you take your online business to the next level. Whether you need help with web design, development, or optimization, we've got you covered. With our expertise in BigCommerce, we can help you maximize your store's potential and achieve your business goals. Contact us today to learn how we can help you grow your online business.",
     publicationDate: "1960-07-11",
-    choose: "Why Choose WODWES For BigCommerce Services?",
+    choose: (
+      <div className="text-[30px] text-[#272821] mb-7 font-[700]">
+        {" "}
+        Why Choose{" "}
+        <span className="font-[700]" style={{ color: "#f62c73" }}>
+          {" "}
+          WODWES
+        </span>{" "}
+        BigCommerce Development Services?
+      </div>
+    ),
     choosePara:
       "WODWES is a reliable and experienced BigCommerce development company.They offer a wide range of BigCommerce services, including customization, migration, and maintenance.Their team of experts can help you create a successful online store that meets your unique business needs.",
     SlideImage: [
@@ -442,11 +463,22 @@ export const User = [
   },
   {
     index: "Drupal-Development",
-    title: "Drupal Website Development Services",
+    title2: "Drupal",
+    title: " Website Development Services",
     author:
       "We offer enterprise-grade Drupal development services that deliver robust and end-to-end web, social, and mobile experiences. Our comprehensive Drupal framework expertise, agile development methodology, and client-focused attitude helped leading businesses boost their next-gen virtual transformation and growth. We offer flexible engagement models that capitalize on radical CRM to deliver tangible business results transparently.",
     publicationDate: "1960-07-11",
-    choose: "Why Choose WODWES for Drupal Development Services?",
+    choose: (
+      <div className="text-[30px] text-[#272821] mb-7 font-[700]">
+        {" "}
+        Why Choose{" "}
+        <span className="font-[700]" style={{ color: "#f62c73" }}>
+          {" "}
+          WODWES
+        </span>{" "}
+        Drupal Development Services?
+      </div>
+    ),
     choosePara:
       "WODWES has established itself as the industry-leading platform for Drupal development services and our renowned clientele and portfolio are speaking proof of it. Whether you need Drupal-based development, migration, integration, or need help with compelling design solutions, we have you covered.",
     SlideImage: [
@@ -647,7 +679,17 @@ export const User = [
     author:
       "With seasoned expertise in creating Magento-based web experiences, WODWES offers best-of-suite bespoke Magento development services. From creating Magento design and architecture to deployment and optimization, our certified developers provide professional assistance in taking your business to the web. Leveraging our strategic innovation, and nurtured Magento framework handling, we develop reliable, scalable, and robust Magento e-commerce solutions to achieve desired business goals.",
     publicationDate: "1960-07-11",
-    choose: "Why Choose WODWES for Magento Development Services?",
+    choose: (
+      <div className="text-[30px] text-[#272821] mb-7 font-[700]">
+        {" "}
+        Why Choose{" "}
+        <span className="font-[700]" style={{ color: "#f62c73" }}>
+          {" "}
+          WODWES
+        </span>{" "}
+        Magento Development Services?
+      </div>
+    ),
     choosePara:
       "WODWES is a dependable digital agency that specializes in WordPress services such as web design, development, and maintenance. They have a skilled team committed to providing top-quality solutions, emphasizing customer satisfaction, attention to detail, and timely delivery.WODWES is the industry-best provider of Magento development solutions customized to your business's exact needs. With years of providing Magento-based solutions to startups, enterprises, and small businesses, we claim to transform the landscape of multiple renowned businesses.",
     SlideImage: [
@@ -841,11 +883,23 @@ export const User = [
   },
   {
     index: "Magento-Development",
-    title: "WordPress Development Services",
+    title2: "WordPress",
+
+    title: " Development Services",
     author:
       "WODWES is a trusted WordPress development company building ROI-driven solutions that deliver security, control, and high-end functionality to increase the efficiency of your business. With an experienced team of WordPress developers, we offer a wide range of professional WordPress design and development services around the globe. We follow agile methodologies and best and proven practices to develop feature-enriched WordPress solutions that allow exponential growth of a business.",
     publicationDate: "1960-07-11",
-    choose: "Why Choose WODWES For WordPress Development Services?",
+    choose: (
+      <div className="text-[30px] text-[#272821] mb-7 font-[700]">
+        {" "}
+        Why Choose{" "}
+        <span className="font-[700]" style={{ color: "#f62c73" }}>
+          {" "}
+          WordPress
+        </span>{" "}
+        Joomla Development Services?
+      </div>
+    ),
     choosePara:
       "WODWES is a dependable digital agency that specializes in WordPress services such as web design, development, and maintenance. They have a skilled team committed to providing top-quality solutions, emphasizing customer satisfaction, attention to detail, and timely delivery.",
     SlideImage: [
@@ -995,11 +1049,23 @@ export const User = [
   },
   {
     index: "Angular-Development",
-    title: "Angular Development Services",
+    title2: "Angular",
+
+    title: " Development Services",
     author:
       "As an enterprise-grade Angular development company, we house a hybrid team with extensive domain expertise and Angular framework integration capabilities to develop tailor-built, highly functional, and ready-to-market web solutions. Our detail-oriented developers deeply analyze your business to devise the right blend of front-end and back-end development technologies, delivering intuitive and business-transforming Angular web solutions. Fast-paced, interactive applications are our trademark, bringing unparalleled user experience, and claiming your share of online success.",
     publicationDate: "1960-07-11",
-    choose: "Why Choose WODWES for Angular Web Development Services?",
+    choose: (
+      <div className="text-[30px] text-[#272821] mb-7 font-[700]">
+        {" "}
+        Why Choose{" "}
+        <span className="font-[700]" style={{ color: "#f62c73" }}>
+          {" "}
+          WODWES
+        </span>{" "}
+        Angular Development Services?
+      </div>
+    ),
     choosePara:
       "WODWES is an industry-leading Angular development company transforming small businesses, startups, and large enterprises with our custom Angular web development services. We aim to create dynamic, and high-performing apps to help your business yield digital growth.",
     SlideImage: [
@@ -1193,11 +1259,22 @@ export const User = [
 
   {
     index: "Vue.js-Development",
-    title: "Vue.Js Development Services",
+    title2: "Vue.Js",
+    title: " Development Services",
     author:
       "We build a mighty performance Vue. js-based user interfaces, ensuring seamless workflow across versatile platforms and devices. From single-page applications to complex websites and CRMs, we deliver responsive, intuitive, and scalable web solutions, tailored to your user aesthetic taste, attracting growth opportunities, and establishing credibility throughout your industry. We combine our technical skills with an extensive understanding of the Vue.js framework, creating business-oriented, fast-build, and cost-effective Vue.js solutions with uncompromisable quality.",
     publicationDate: "1960-07-11",
-    choose: "Why Choose WODWES for Vue.Js Development Services?",
+    choose: (
+      <div className="text-[30px] text-[#272821] mb-7 font-[700]">
+        {" "}
+        Why Choose{" "}
+        <span className="font-[700]" style={{ color: "#f62c73" }}>
+          {" "}
+          WODWES
+        </span>{" "}
+        Vue.Js Development Services?
+      </div>
+    ),
     choosePara:
       "WODWES is a state-of-the-art provider of Vue.js development services. With a proven track record of digitally transforming startups, small businesses, and large-scale enterprises, we confidently claim that we meet the highest technology standards in creating top-notch Vue.Js products. Our dedicated Vue.Js developers use a result-driven approach to create user-oriented software products that drive maximum leads and conversions.",
     SlideImage: [
@@ -1392,11 +1469,22 @@ export const User = [
 
   {
     index: "React-Development",
-    title: "React Development Services",
+    title2: "React",
+    title: " Development Services",
     author:
       "As a leading React development company, our specialized React developers build scalable and robust user interfaces, delivering an unparalleled user experience. We develop Dev solutions of robust functionality and phenomenal visual appeal, building a competitive edge with our Front end and back-end development expertise, complemented by vetted awareness of critical businesses’ needs. Leveraging the advanced-featured programming language, we transform businesses with intuitive, and dynamic React-built solutions to meet their tangible business objectives.",
     publicationDate: "1960-07-11",
-    choose: "Why Choose WODWES for React Development Services?",
+    choose: (
+      <div className="text-[30px] text-[#272821] mb-7 font-[700]">
+        {" "}
+        Why Choose{" "}
+        <span className="font-[700]" style={{ color: "#f62c73" }}>
+          {" "}
+          WODWES
+        </span>{" "}
+        React sDevelopment Services?
+      </div>
+    ),
     choosePara:
       "WODWES has established itself to be a cutting-edge provider of React development solutions. Leveraging our collaborative work approach, we partner up with you to fully understand and analyze your business goals and needs to devise the right React development solution to digitally take your business to the path of growth.",
     SlideImage: [
@@ -1570,11 +1658,22 @@ export const User = [
 
   {
     index: "MERN-Software-Development",
-    title: "MERN Stack Development",
+    title2: "MERN",
+    title: " Stack Development",
     author:
       "At WODWES, we offer comprehensive MERN stack development services to help businesses build robust, scalable web applications that meet their unique needs. Our team of experts uses the latest technologies and best practices to design, develop, and deliver high-quality web applications that are fast, responsive, and intuitive. Contact us today to learn more about how we can help you harness the power of the MERN stack and take your business to the next level.",
     publicationDate: "1960-07-11",
-    choose: "Why Choose WODWES For MERN Stack Development Services?",
+    choose: (
+      <div className="text-[30px] text-[#272821] mb-7 font-[700]">
+        {" "}
+        Why Choose{" "}
+        <span className="font-[700]" style={{ color: "#f62c73" }}>
+          {" "}
+          WODWES
+        </span>{" "}
+        MERN Stack Development Services?
+      </div>
+    ),
     choosePara:
       "Wodwes is a leading software development company with expertise in MERN stack development services.They have a team of skilled developers who are proficient in building complex and scalable web applications using MERN stack.With a client-centric approach and a commitment to delivering quality solutions, Wodwes is a trusted partner for MERN stack development projects.",
     SlideImage: [
@@ -1792,11 +1891,22 @@ export const User = [
 
   {
     index: "Laravel-Software-Development",
-    title: "Laravel Software Development",
+    title2: "Laravel",
+    title: " Software Development",
     author:
       "As a top-rated Laravel development services company, WODWES has extended expertise in building robust, scalable, and high performance development solutions. We house a proficient team who are well-versed in developing web applications and software using Laravel - a PHP-based framework. At WODWES, we partner with clients to understand their requirements first and by aligning to their specific business goals, we render efficient and cost-effective solutions. Get your next project developed by a vetted team of developers at the best price!",
     publicationDate: "1960-07-11",
-    choose: "Why Choose WODWES For Laravel Services?",
+    choose: (
+      <div className="text-[30px] text-[#272821] mb-7 font-[700]">
+        {" "}
+        Why Choose{" "}
+        <span className="font-[700]" style={{ color: "#f62c73" }}>
+          {" "}
+          WODWES
+        </span>{" "}
+        Laravel Services?
+      </div>
+    ),
     SlideImage: [
       {
         img: ImageSS1,
@@ -2001,11 +2111,22 @@ export const User = [
   },
   {
     index: "PHP-Software-Development",
-    title: "PHP Website Development Services",
+    title2: "PHP",
+    title: " Website Development Services",
     author:
       "We deliver full-cycle, high-performing, and database-driven PHP development solutions. With extended knowledge of PHP and its framework, we have a proven track record of completing numerous projects rendering 100% client satisfaction. Our specialized developers create unparalleled PHP solutions to deliver robust, feature-rich, and user-oriented sites and apps. We aim to design future-proof solutions, setting your business up for success.",
     publicationDate: "1960-07-11",
-    choose: "Why Choose WODWES For PHP Development?",
+    choose: (
+      <div className="text-[30px] text-[#272821] mb-7 font-[700]">
+        {" "}
+        Why Choose{" "}
+        <span className="font-[700]" style={{ color: "#f62c73" }}>
+          {" "}
+          WODWES
+        </span>{" "}
+        PHP Development Services?
+      </div>
+    ),
     choosePara:
       "We have nurtured expertise in providing web-based solutions to multiple clients who now flaunt renowned business domains. WODWES is an industry-leading provider of full-cycle PHP solutions that are designed to take your business forward and reap consistent growth for many years to come.",
     SlideImage: [
@@ -2143,7 +2264,17 @@ export const User = [
           "Being providing PHP website development services for years, our seasoned experts have nurtured expertise needed to work with multiple PHP frameworks. The notable PHP frameworks that we work with include Symfony, CakePHP, Laravel, Codelgniter, ZendFramework, and more. We further take pride in our providing CMS development, i.e. WordPress, HTML, JavaScript, eCommerce, and mobile application development.",
       },
       {
-        h3Title: "Why Choose WODWES For PHP Development?",
+        h3Title: (
+          <div className="text-[30px] text-[#272821] mb-7 font-[700]">
+            {" "}
+            Why Choose{" "}
+            <span className="font-[700]" style={{ color: "#f62c73" }}>
+              {" "}
+              WODWES
+            </span>{" "}
+            PHP Development
+          </div>
+        ),
         paraD:
           "We have nurtured expertise in providing web-based solutions to multiple clients who now flaunt renowned business domains. WODWES is an industry-leading provider of full-cycle PHP solutions that are designed to take your business forward and reap consistent growth for many years to come.",
       },
@@ -2225,11 +2356,22 @@ export const User = [
   },
   {
     index: "Laravel%20E-commerce%20Development",
-    title: "Laravel E-commerce Development",
+    title2: "Laravel",
+    title: " E-commerce Development",
     author:
       "As a top-rated Laravel development services company, WODWES has extended expertise in building robust, scalable, and high performance development solutions. We house a proficient team who are well-versed in developing web applications and software using Laravel - a PHP-based framework. At WODWES, we partner with clients to understand their requirements first and by aligning to their specific business goals, we render efficient and cost-effective solutions. Get your next project developed by a vetted team of developers at the best price!",
     publicationDate: "1960-07-11",
-    choose: "Why Choose WODWES For Laravel Services?",
+    choose: (
+      <div className="text-[30px] text-[#272821] mb-7 font-[700]">
+        {" "}
+        Why Choose{" "}
+        <span className="font-[700]" style={{ color: "#f62c73" }}>
+          {" "}
+          WODWES
+        </span>{" "}
+        Laravel Services?
+      </div>
+    ),
     links: [
       {
         img: image1,
@@ -2358,11 +2500,22 @@ export const User = [
   },
   {
     index: "CodeIgniter-Development",
-    title: " Codelgniter Website Development Services",
+    title2: "Codelgniter",
+    title: " Website Development Services",
     author:
       "WODWES is a top-leading provider of Codelgniter services, delivering adaptable, secure, and scalable web applications. Our industry-specialized Codelgniter developers have a knack for creating custom-specific, database-driven, and feature-rich apps for businesses of all sorts. We offer full-cycle web solutions leveraging our deep-rooted understanding of MVC architecture and robust frameworks. Whether it's Codelgniter site development or module development, our end-to-end web solutions yield maximum client satisfaction.",
     publicationDate: "1960-07-11",
-    choose: "Why Choose WODWES For Codelgniter Web Development Services",
+    choose: (
+      <div className="text-[30px] text-[#272821] mb-7 font-[700]">
+        {" "}
+        Why Choose{" "}
+        <span className="font-[700]" style={{ color: "#f62c73" }}>
+          {" "}
+          WODWES
+        </span>{" "}
+        Codelgniter Web Services?
+      </div>
+    ),
     choosePara:
       "WODWES is a woman-driven team of web developers and technical professionals providing dynamic, and supreme web solutions. We offer a wide range of Codelgniter services including development, implementation, migration, customization, and more.",
     links: [
@@ -2497,11 +2650,22 @@ export const User = [
   },
   {
     index: "PHP%20E-commerce%20Development",
-    title: "PHP Website Development Services",
+    title2: "PHP",
+    title: " Website Development Services",
     author:
       "We deliver full-cycle, high-performing, and database-driven PHP development solutions. With extended knowledge of PHP and its framework, we have a proven track record of completing numerous projects rendering 100% client satisfaction. Our specialized developers create unparalleled PHP solutions to deliver robust, feature-rich, and user-oriented sites and apps. We aim to design future-proof solutions, setting your business up for success.",
     publicationDate: "1960-07-11",
-    choose: "Why Choose WODWES For PHP Development?",
+    choose: (
+      <div className="text-[30px] text-[#272821] mb-7 font-[700]">
+        {" "}
+        Why Choose{" "}
+        <span className="font-[700]" style={{ color: "#f62c73" }}>
+          {" "}
+          WODWES
+        </span>{" "}
+        PHP Development?
+      </div>
+    ),
     choosePara:
       "We have nurtured expertise in providing web-based solutions to multiple clients who now flaunt renowned business domains. WODWES is an industry-leading provider of full-cycle PHP solutions that are designed to take your business forward and reap consistent growth for many years to come.",
     links: [
@@ -2635,11 +2799,20 @@ export const User = [
   },
   {
     index: "Shopify-Development",
-    title: "Why Choose WODWES For Shopify Development Services?",
+    title2: "Why",
+    title: " Choose WODWES For Shopify Development Services?",
     author:
       "Hire the most proficient team for Shopify Development Services. We at WODWES have a team of dedicated shopify experts building scalable, robust, and high-performing e-commerce solutions to help you stay competitive. With years of experience and expertise, we have made a distinctive mark as a leading shopify development agency transforming businesses with high-quality solutions.",
     publicationDate: "1960-07-11",
-    choose: "undefined",
+    choose: (
+      <div className="text-[30px] text-[#272821] mb-7 font-[700]">
+        {" "}
+        <span className="font-[700]" style={{ color: "#f62c73" }}>
+          {" "}
+          undefined
+        </span>
+      </div>
+    ),
     choosePara:
       "WODWES is an experienced and professional Shopify development company that provides a wide range of services to help businesses of all sizes to build and grow their online stores. There are several reasons why choosing WODWES for your Shopify development needs can be a great decision.WODWES offers exceptional services that you would never find anywhere else.",
     links: [
@@ -2760,11 +2933,22 @@ export const User = [
   },
   {
     index: "WordPress-E-commerce-Development",
-    title: "WordPress E-commerce Development",
+    title2: "WordPress",
+    title: " E-commerce Development",
     author:
       "WODWES is a trusted WordPress development company building ROI-driven solutions that deliver security, control, and high-end functionality to increase the efficiency of your business. With an experienced team of WordPress developers, we offer a wide range of professional WordPress design and development services around the globe. We follow agile methodologies and best and proven practices to develop feature-enriched WordPress solutions that allow exponential growth of a business.",
     publicationDate: "1960-07-11",
-    choose: "Why Choose WODWES For WordPress Development Services?",
+    choose: (
+      <div className="text-[30px] text-[#272821] mb-7 font-[700]">
+        {" "}
+        Why Choose{" "}
+        <span className="font-[700]" style={{ color: "#f62c73" }}>
+          {" "}
+          WODWES
+        </span>{" "}
+        WordPress Development Services?
+      </div>
+    ),
     choosePara:
       "WODWES is a dependable digital agency that specializes in WordPress services such as web design, development, and maintenance. They have a skilled team committed to providing top-quality solutions, emphasizing customer satisfaction, attention to detail, and timely delivery.",
     links: [

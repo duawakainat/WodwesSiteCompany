@@ -68,7 +68,10 @@ const Section6 = () => {
       <div className="grid lg:grid-cols-3 sm:grid-cols-2 mt-14 lg:[&>*:nth-child(even)]:border-r-[1px] sm:[&>*:nth-child(even)]:border-r-[0px] lg:[&>*:nth-child(3)]:border-b-[1px] lg:[&>*:nth-child(3)]:border-r-[0px] lg:[&>*:nth-child(6)]:!border-r-[0px] [&>*:nth-child(8)]:!border-b-[0px] [&>*:nth-child(7)]:!border-b-[0px] lg:[&>*:nth-child(8)]:!border-r-[0px] max-[630px]:[&>*:nth-child(even)]:!border-r-[0px] max-[630px]:[&>*:nth-child(odd)]:!border-r-[0px] max-[630px]:[&>*:nth-child(even)]:!border-b-[1px] max-[630px]:[&>*:nth-child(odd)]:!border-b-[1px] border-gray-200">
         {Table.map((menu, index) => {
           return (
-            <div className="pt-5 md:pr-14 pr-4 pb-12 pl-4 hover:shadow-[4px_4px_15px_6px_#f62c7326;] border-b-[1px] border-r-[1px] border-gray-200">
+            <div
+              key={index}
+              className="pt-5 md:pr-14 pr-4 pb-12 pl-4 hover:shadow-[4px_4px_15px_6px_#f62c7326;] border-b-[1px] border-r-[1px] border-gray-200"
+            >
               <Image
                 src="/full-stack-c89c521a.png"
                 alt="image"

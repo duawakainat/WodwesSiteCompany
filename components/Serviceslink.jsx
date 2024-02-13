@@ -1,18 +1,17 @@
-'use client'
-import { useRouter } from "next/router"
-import React from 'react'
+"use client";
+import { useRouter } from "next/router";
+import React from "react";
 
-const Serviceslink = ({id}) => {
-    // const router=useRouter()
-    // function handleClick() {
-    //     router.push(`/product/${id}`)
-    // }
+const Serviceslink = ({ id }) => {
+  // const router=useRouter()
+  // function handleClick() {
+  //     router.push(`/product/${id}`)
+  // }
   return (
     <div>
-        <button className="cursor-pointer">
-        goto page</button>
+      <button className="cursor-pointer">goto page</button>
     </div>
-  )
-}
+  );
+};
 
-export default Serviceslink
+export default Serviceslink;

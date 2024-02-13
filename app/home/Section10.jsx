@@ -95,108 +95,109 @@ const Section10 = () => {
       </div>
       <div className="w-[90%] mx-auto">
         <div className="max-w-[950px] mx-auto">
-        <div className="flex justify-between md:my-14 my-10 gap-4 max-[343px]:gap-1">
-          <button
-            className={`text-[20px] max-[578px]:text-sm font-[600] duration-[300] hover:text-[#f62c73] ${getActiveClass(
-              1,
-              "activeBtn"
-            )}`}
-            id="1"
-            onClick={() => Toogle(1)}
-          >
-            Frontend Technologies
-          </button>
-          <button
-            className={`text-[20px] max-[578px]:text-sm font-[600] duration-[300] hover:text-[#f62c73] ${getActiveClass(
-              2,
-              "activeBtn"
-            )}`}
-            id="2"
-            onClick={() => Toogle(2)}
-          >
-            Back-end Technologies
-          </button>
-          <button
-            className={`text-[20px] max-[578px]:text-sm font-[600] duration-[300] hover:text-[#f62c73] ${getActiveClass(
-              3,
-              "activeBtn"
-            )}`}
-            id="3"
-            onClick={() => Toogle(3)}
-          >
-            CMS technologies
-          </button>
-        </div>
-        {active && (
-          <div className="flex flex-wrap justify-center lg:max-w-[896px] max-w-[700px] lg:gap-x-40 gap-10 md:gap-x-20 lg:gap-y-20 md:gap-y-14 mx-auto">
-            <div className="w-20 h-20 rounded-full flex justify-center items-center shadow-[0px_4px_6px_rgba(39,40,33,.19)]">
-              {" "}
-              <Image
-                src={Table[active].Image1}
-                width={56}
-                height={56}
-                className=" w-14 h-14"
-                alt="filter_image"
-              />
-            </div>
-            <div className="w-20 h-20 rounded-full flex justify-center items-center shadow-[0px_4px_6px_rgba(39,40,33,.19)]">
-              <Image
-                src={Table[active].Image2}
-                width={56}
-                height={56}
-                className=" w-14 h-14"
-                alt="filter_image"
-              />{" "}
-            </div>
-            <div className="w-20 h-20 rounded-full flex justify-center items-center shadow-[0px_4px_6px_rgba(39,40,33,.19)]">
-              <Image
-                src={Table[active].Image3}
-                width={56}
-                height={56}
-                className=" w-14 h-14"
-                alt="filter_image"
-              />{" "}
-            </div>
-            <div className="w-20 h-20 rounded-full flex justify-center items-center shadow-[0px_4px_6px_rgba(39,40,33,.19)]">
-              <Image
-                src={Table[active].Image7}
-                width={56}
-                height={56}
-                className=" w-14 h-14"
-                alt="filter_image"
-              />{" "}
-            </div>
-            <div className="w-20 h-20 rounded-full flex justify-center items-center shadow-[0px_4px_6px_rgba(39,40,33,.19)]">
-              <Image
-                src={Table[active].Image4}
-                width={56}
-                height={56}
-                className=" w-14 h-14"
-                alt="filter_image"
-              />{" "}
-            </div>
-            <div className="w-20 h-20 rounded-full flex justify-center items-center shadow-[0px_4px_6px_rgba(39,40,33,.19)]">
-              <Image
-                src={Table[active].Image5}
-                width={56}
-                height={56}
-                className=" w-14 h-14"
-                alt="filter_image"
-              />{" "}
-            </div>
-            <div className="w-20 h-20 rounded-full flex justify-center items-center shadow-[0px_4px_6px_rgba(39,40,33,.19)]">
-              <Image
-                src={Table[active].Image6}
-                width={56}
-                height={56}
-                className=" w-14 h-14"
-                alt="filter_image"
-              />
-            </div>{" "}
+          <div className="flex justify-between md:my-14 my-10 gap-4 max-[343px]:gap-1">
+            <button
+              className={`text-[20px] max-[578px]:text-sm font-[600] duration-[300] hover:text-[#f62c73] ${getActiveClass(
+                1,
+                "activeBtn"
+              )}`}
+              id="1"
+              onClick={() => Toogle(1)}
+            >
+              Frontend Technologies
+            </button>
+            <button
+              className={`text-[20px] max-[578px]:text-sm font-[600] duration-[300] hover:text-[#f62c73] ${getActiveClass(
+                2,
+                "activeBtn"
+              )}`}
+              id="2"
+              onClick={() => Toogle(2)}
+            >
+              Back-end Technologies
+            </button>
+            <button
+              className={`text-[20px] max-[578px]:text-sm font-[600] duration-[300] hover:text-[#f62c73] ${getActiveClass(
+                3,
+                "activeBtn"
+              )}`}
+              id="3"
+              onClick={() => Toogle(3)}
+            >
+              CMS technologies
+            </button>
           </div>
-        )}
+          {active && (
+            <div className="flex flex-wrap justify-center lg:max-w-[896px] max-w-[700px] lg:gap-x-40 gap-10 md:gap-x-20 lg:gap-y-20 md:gap-y-14 mx-auto">
+              <div className="w-20 h-20 rounded-full flex justify-center items-center shadow-[0px_4px_6px_rgba(39,40,33,.19)]">
+                {" "}
+                <Image
+                  src={Table[active].Image1}
+                  width={56}
+                  height={56}
+                  className=" w-14 h-14"
+                  alt="filter_image"
+                />
+              </div>
+              <div className="w-20 h-20 rounded-full flex justify-center items-center shadow-[0px_4px_6px_rgba(39,40,33,.19)]">
+                <Image
+                  src={Table[active].Image2}
+                  width={56}
+                  height={56}
+                  className=" w-14 h-14"
+                  alt="filter_image"
+                />{" "}
+              </div>
+              <div className="w-20 h-20 rounded-full flex justify-center items-center shadow-[0px_4px_6px_rgba(39,40,33,.19)]">
+                <Image
+                  src={Table[active].Image3}
+                  width={56}
+                  height={56}
+                  className=" w-14 h-14"
+                  alt="filter_image"
+                />{" "}
+              </div>
+              <div className="w-20 h-20 rounded-full flex justify-center items-center shadow-[0px_4px_6px_rgba(39,40,33,.19)]">
+                <Image
+                  src={Table[active].Image7}
+                  width={56}
+                  height={56}
+                  className=" w-14 h-14"
+                  alt="filter_image"
+                />{" "}
+              </div>
+              <div className="w-20 h-20 rounded-full flex justify-center items-center shadow-[0px_4px_6px_rgba(39,40,33,.19)]">
+                <Image
+                  src={Table[active].Image4}
+                  width={56}
+                  height={56}
+                  className=" w-14 h-14"
+                  alt="filter_image"
+                />{" "}
+              </div>
+              <div className="w-20 h-20 rounded-full flex justify-center items-center shadow-[0px_4px_6px_rgba(39,40,33,.19)]">
+                <Image
+                  src={Table[active].Image5}
+                  width={56}
+                  height={56}
+                  className=" w-14 h-14"
+                  alt="filter_image"
+                />{" "}
+              </div>
+              <div className="w-20 h-20 rounded-full flex justify-center items-center shadow-[0px_4px_6px_rgba(39,40,33,.19)]">
+                <Image
+                  src={Table[active].Image6}
+                  width={56}
+                  height={56}
+                  className=" w-14 h-14"
+                  alt="filter_image"
+                />
+              </div>{" "}
+            </div>
+          )}
+        </div>
       </div>
-    </div></div>
+    </div>
   );
 };
 

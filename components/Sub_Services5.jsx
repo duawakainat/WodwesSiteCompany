@@ -13,7 +13,7 @@ const Sub_Services5 = ({ Development_H, Development_Para }) => {
           </p>
           <div className="">
             <a className="hover:bg-[#f62c73] text-black hover:text-white border-2 border-[#f62c73] bg-transparent w-[200px] font-[600] py-3 px-5 flex justify-center items-center">
-              Let's Talk
+              Lets Talk
             </a>
           </div>
         </div>
