@@ -101,9 +101,7 @@ const Page = ({ params }) => {
     return (
       <div
         className="slick-prev_1"
-        // style={{
-        //   color: "black",
-        // }}
+        
         onClick={onClick}
       >
         <svg
@@ -172,8 +170,6 @@ const Page = ({ params }) => {
         if (menu.index == params.id)
           return (
             <div key={index}>
-              <h1>{menu.title}</h1>
-
               <PassValue
                 title={menu.title}
                 author={menu.author}

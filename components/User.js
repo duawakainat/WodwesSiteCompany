@@ -418,7 +418,7 @@ export const User = [
         ],
       },
       {
-        image: ImageS9,
+        image: ImageSS9,
         links: [
           {
             h3Title: "+6%",
@@ -437,7 +437,7 @@ export const User = [
         ],
       },
       {
-        image: ImageS14,
+        image: ImageSS14,
         links: [
           {
             h3Title: "+7.5%",
