@@ -629,7 +629,7 @@ export const User = [
     ],
     navItems: [
       {
-        image: ImageSS2,
+        image: ImageSS12,
         links: [
           {
             h3Title: "+6%",
@@ -647,7 +647,7 @@ export const User = [
         ],
       },
       {
-        image: ImageSS3,
+        image: ImageSS13,
         links: [
           {
             h3Title: "+6%",
@@ -1493,7 +1493,7 @@ export const User = [
           {" "}
           WODWES
         </span>{" "}
-        React sDevelopment Services?
+        React Development Services?
       </div>
     ),
     choosePara:
@@ -1501,10 +1501,7 @@ export const User = [
     SlideImage: [
       {
         img: ImageSS22,
-      },
-      {
-        img: ImageSS23,
-      },
+      },   
     ],
     links: [
       {

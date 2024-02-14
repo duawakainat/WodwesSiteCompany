@@ -51,6 +51,7 @@ const Page = ({ params }) => {
           slidesToShow: 2,
           slidesToScroll: 2,
           initialSlide: 1,
+          dots: false,
         },
       },
       {
@@ -58,6 +59,7 @@ const Page = ({ params }) => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          dots: false,
         },
       },
     ],
@@ -101,7 +103,7 @@ const Page = ({ params }) => {
     return (
       <div
         className="slick-prev_1"
-        
+
         onClick={onClick}
       >
         <svg
@@ -133,10 +135,10 @@ const Page = ({ params }) => {
       </div>
     );
   }
-
+  
   const settings3 = {
     dots: false,
-    infinite: true,
+    infinite: false,
     slidesToShow: 3,
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow />,
@@ -148,7 +150,7 @@ const Page = ({ params }) => {
           slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
-          dots: true,
+          dots: false,
         },
       },
     ],
@@ -272,7 +274,7 @@ const Page = ({ params }) => {
                 </div>
               </div>
               {/* <div> */}
-              {menu.navItems && (
+              {menu.navItems  &&  (
                 <div>
                   <div className="w-[90%] mx-auto">
                     <h2 className="text-[30px] tracking-tighter mb-3 font-[700]">
@@ -281,10 +283,15 @@ const Page = ({ params }) => {
                         {""} Questions!
                       </span>
                     </h2>
-                    <p className="text-[16px] mb-7 mt-4 text-[#272821]">
-                      We love hearing about how our work has helped businesses
-                      succeed and how WODWES became
+                    <p className="text-[16px] mb-3 mt-4 text-[#272821]">
+                    We love hearing about how our work has helped businesses succeed and how WODWES became their go-to <br/>
+development team. Don't just take our word for it - read what our satisfied clients have to say!
                     </p>
+                    <div className=" mb-6">
+          <a className="hover:bg-[#f62c73] hover:text-white border-2 border-[#f62c73] bg-transparent w-[200px] font-[600] py-3 px-5 flex justify-center items-center">
+            Let is Talk
+          </a>
+        </div>
                   </div>
                   <Slider
                     asNavFor={nav2}
@@ -348,7 +355,7 @@ const Page = ({ params }) => {
                                   width={0}
                                   height={0}
                                   alt="image"
-                                  className="w-100 md:h-[480px] h-[300px]"
+                                  className="w-100 md:h-[480px] h-[300px] rounded-lg"
                                 />
                               </div>
                             </div>
@@ -362,18 +369,18 @@ const Page = ({ params }) => {
               {menu.SlideImage && (
                 <div className="w-[90%] mx-auto">
                   <div className="w-[90%] mx-auto">
-                    <ul className="border-t-2 faqs-main-ul pb-12">
+                    <div className="border-t-2 pb-12">
                       <Slider
+                        
                         asNavFor={nav1}
                         ref={(slider2) => setNav2(slider2)}
                         swipeToSlide={true}
                         focusOnSelect={true}
-                        {...settings3}
+                        {...settings3} 
                       >
                         {menu.SlideImage.map((items, index) => {
                           return (
-                            <>
-                              <li
+                              <div
                                 key={index}
                                 className="px-5 py-2 md:p-5 lg:p-7 xl:p-10 border-r"
                               >
@@ -384,12 +391,11 @@ const Page = ({ params }) => {
                                   alt="image"
                                   className="w-[270px] h-[90px] object-contain"
                                 />
-                              </li>
-                            </>
+                              </div>
                           );
                         })}
                       </Slider>
-                    </ul>
+                    </div>
                   </div>
                 </div>
               )}

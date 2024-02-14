@@ -7,7 +7,9 @@ const Section12 = () => {
         src="/YourDevelopmentPartner-9a89547a.png"
         width={0}
         height={0}
-        className="max-h-[625px] rounded-[.5rem] object-cover lg:sticky lg:top-[8rem]"
+        quality={100}
+        alt="image"
+        className="max-h-[625px] blur-none w-full rounded-[.5rem] object-container lg:sticky lg:top-[8rem]"
       />
       <div className="md:mt-8 lg:mt-4 mt-4 my-4">
         <h2 className="text-[30px] font-[700] space-x-2 ">

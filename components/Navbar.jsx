@@ -10,9 +10,16 @@ const Navbar = (props) => {
   const [navToogle, setNavToogle] = useState(false);
   const [toogle, setToogle] = useState(false);
   const [industrytoogle, setIndustryToogle] = useState(false);
-
+ const ToogleIndustry=()=>{
+  setIndustryToogle(!industrytoogle);
+  setToogle(false);
+ }
+ const ToogleServices=()=>{
+  setToogle(!toogle);
+  setIndustryToogle(false);
+ }
   return (
-    <div className="z-50 sticky top-0 bg-white">
+    <div className="z-50 sticky top-0 shadow-lg bg-white">
       <div className=" bg-white">
         <div className="flex justify-between items-center mx-auto w-[90%] max-[335px]:w-[93%] lg:min-w-[992px]">
           <div className="py-4 ">
@@ -31,7 +38,7 @@ const Navbar = (props) => {
               </li>
               <li
                 className="text-[16px] flex justify-between gap-2 items-center"
-                onClick={() => setToogle(!toogle)}
+                onClick={ToogleServices}
               >
                 Services
                 <svg
@@ -51,7 +58,7 @@ const Navbar = (props) => {
               </li>
               <li
                 className="text-[16px] cursor-pointer flex justify-between gap-2 items-center"
-                onClick={() => setIndustryToogle(!industrytoogle)}
+                onClick={ToogleIndustry}
               >
                 <Link href="">Industry</Link>
                 <svg
@@ -71,7 +78,7 @@ const Navbar = (props) => {
               </li>
               <li
                 className="text-[16px] cursor-pointer flex justify-between gap-2 items-center"
-                onClick={() => setIndustryToogle(!industrytoogle)}
+                onClick={ToogleIndustry}
               >
                 Technologies
                 <svg
