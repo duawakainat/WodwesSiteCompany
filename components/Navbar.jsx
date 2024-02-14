@@ -1,5 +1,5 @@
 "use client";
-import React, { useState , useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Services from "@/app/services/page";
 
@@ -7,45 +7,33 @@ import IndustryToogle from "./IndustryToogle";
 import NavbarToogle1 from "./NavbarToogle3";
 import Link from "next/link";
 
-
 const Navbar = (props) => {
   const [navToogle, setNavToogle] = useState(false);
   const [toogle, setToogle] = useState(false);
   const [industrytoogle, setIndustryToogle] = useState(false);
-  const ToogleIndustry=()=>{
+  const ToogleIndustry = () => {
     setIndustryToogle(!industrytoogle);
     setToogle(false);
-  }
-  const ToogleServices=()=>{
+  };
+  const ToogleServices = () => {
     setToogle(!toogle);
     setIndustryToogle(false);
-  }
+  };
   const [bodyScroll, setBodyScroll] = useState(true);
-  
+
   useEffect(() => {
-    const resetOnResize = () => {
-      if (window.innerWidth <= 1023) document.body.style.overflow = "hidden";
-      if (window.innerWidth >= 1024) document.body.style.overflow = "scrolls";
-    };
-  
     if (!bodyScroll) {
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "scroll";
-      window.addEventListener("resize", resetOnResize);
     }
-  
-    return () => {
-      window.removeEventListener("resize", resetOnResize);
-    };
   }, [bodyScroll]);
-  const ToogleBody=()=>{
-  setNavToogle(!navToogle)
-  setBodyScroll(!bodyScroll)
- }
+  const ToogleBody = () => {
+    setNavToogle(!navToogle);
+    setBodyScroll(!bodyScroll);
+  };
   return (
     <div className="z-50 sticky top-0 shadow-lg bg-white">
-     
       <div className=" bg-white">
         <div className="flex justify-between items-center mx-auto w-[90%] max-[335px]:w-[93%] lg:min-w-[992px]">
           <div className="py-4 ">
