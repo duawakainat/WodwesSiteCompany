@@ -27,6 +27,7 @@ const PassValue = ({ title, author, title2 }) => {
         className="absolute inset-0 -z-10 object-cover h-full w-full"
         width={0}
         height={0}
+        alt="image"
       />
       <div className="grid gap-10 lg:grid-cols-2 text-white w-[90%] mx-auto">
         <div>

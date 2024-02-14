@@ -3,16 +3,13 @@ import Image from "next/image";
 const Section12 = () => {
   return (
     <div className="w-[90%] mx-auto grid lg:grid-cols-2 my-16 lg:gap-x-8">
-      <Image
-        src="/YourDevelopmentPartner-9a89547a.png"
-        width={0}
-        height={0}
-        quality={100}
-        alt="image"
-        className="max-h-[625px] blur-none w-full rounded-[.5rem] object-container lg:sticky lg:top-[8rem]"
-      />
+        <Image
+          src="/YourDevelopmentPartner-9a89547a.png" width={628} height={625}
+          className="max-h-[625px] rounded-[.5rem] object-cover lg:sticky lg:top-[8rem]"
+        />
       <div className="md:mt-8 lg:mt-4 mt-4 my-4">
         <h2 className="text-[30px] font-[700] space-x-2 ">
+          
           Your Development{" "}
           <span className="text-[#f62c73] text-[30px] font-[700]">
             Partner!
@@ -24,7 +21,7 @@ const Section12 = () => {
           word for it - read what our satisfied clients have to say!
         </p>
         <Image
-          alt="image"
+        alt="image"
           src="/frontend-91b299e9.png"
           width={35}
           height={35}
@@ -41,7 +38,7 @@ const Section12 = () => {
           business goals.
         </p>
         <Image
-          alt="image"
+        alt="image"
           src="/frontend-91b299e9.png"
           width={35}
           height={35}
@@ -59,7 +56,7 @@ const Section12 = () => {
         </p>
         <div className="">
           <a className="hover:bg-[#f62c73] text-black hover:text-white border-2 border-[#f62c73] bg-transparent sm:w-[200px] max-[427px]:w-full w-[200px] mt-4 font-[600] py-3 px-5 flex justify-center items-center">
-            Get Started
+            Get Started 
           </a>
         </div>
       </div>

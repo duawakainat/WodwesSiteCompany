@@ -8,6 +8,7 @@ const Section7 = () => {
           src="/buildyourdream-4078f74d.png"
           width={0}
           height={0}
+          alt="image"
           className="absolute inset-0 object-cover -z-10 bg-no-repeat h-full w-full"
         />
         <div className="flex max-md:flex-col justify-between md:items-center lg:py-20 py-14 gap-10 w-[90%] mx-auto">

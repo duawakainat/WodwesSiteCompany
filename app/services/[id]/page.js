@@ -273,7 +273,6 @@ const Page = ({ params }) => {
                   </ul>
                 </div>
               </div>
-              {/* <div> */}
               {menu.navItems  &&  (
                 <div>
                   <div className="w-[90%] mx-auto">
@@ -285,7 +284,7 @@ const Page = ({ params }) => {
                     </h2>
                     <p className="text-[16px] mb-3 mt-4 text-[#272821]">
                     We love hearing about how our work has helped businesses succeed and how WODWES became their go-to <br/>
-development team. Don't just take our word for it - read what our satisfied clients have to say!
+development team. Dont just take our word for it - read what our satisfied clients have to say!
                     </p>
                     <div className=" mb-6">
           <a className="hover:bg-[#f62c73] hover:text-white border-2 border-[#f62c73] bg-transparent w-[200px] font-[600] py-3 px-5 flex justify-center items-center">

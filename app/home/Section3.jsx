@@ -9,7 +9,7 @@ const Section3 = () => {
   let counter = 0;
   useEffect(() => {
     clearInterval(timer);
-    timer = setInterval(() => {
+  timer = setInterval(() => {
       if (counterState === 60) {
         clearInterval(timer);
         return;

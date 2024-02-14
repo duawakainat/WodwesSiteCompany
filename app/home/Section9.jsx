@@ -8,6 +8,7 @@ const Section9 = () => {
         className="absolute inset-0 object-cover -z-10 bg-no-repeat h-full w-full"
         width={0}
         height={0}
+        alt="image"
       />
       <div className="py-20 gap-10 w-[90%] mx-auto">
         <div className="flex max-md:flex-col justify-between md:items-center gap-10">
@@ -32,11 +33,11 @@ const Section9 = () => {
           </div>
         </div>
         <div className="grid md:grid-cols-2 gap-10 md:gap-3 mt-10">
-          <div>
-            <Image src="/cvmakerhub-2467481a.png" width={0} height={0} />
+          <div className="w-full h-full">
+            <Image src="/cvmakerhub-2467481a.png" alt="image" width={1000} height={1000} quality={100} className="w-full h-full" />
           </div>
-          <div>
-            <Image src="/cvmakerhub2-cbfb7ecb.png" width={0} height={0} />
+          <div className="w-full h-full">
+            <Image src="/cvmakerhub2-cbfb7ecb.png" alt="image" width={1000} height={1000} quality={100} className="w-full h-full" />
           </div>
         </div>
       </div>

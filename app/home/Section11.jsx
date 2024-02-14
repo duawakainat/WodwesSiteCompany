@@ -34,6 +34,7 @@ const Section11 = () => {
         className="absolute inset-0 -z-10 object-cover bg-no-repeat h-full w-full"
         width={0}
         height={0}
+        alt="image"
       />
       <div className="py-20">
         <div className="gap-10 w-[90%] mx-auto">

@@ -1,16 +1,17 @@
 "use client";
 import React from "react";
-
+import Image from "next/image";
 const Section2 = () => {
   return (
     <div className="relative ">
-      <img
-        src="/Banner-22ae39b2.png"
+      <Image
+        src="/Banner-22ae39b2.png" width={0} height={0} alt="image"
         className="absolute inset-0 object-cover -z-10 bg-no-repeat h-full w-full"
       />
       <div className="w-[90%] text-center text-white max-w-[950px] mx-auto lg:pt-[109px] pt-[64px] lg:pb-[77px] pb-[64px]">
         <h1 className="xl:text-[60px] lg:text-[48px] md:text-[36px] text-[30px] font-bold ">
-          We are a Full Service <span className="h-[1.5em] overflow-hidden inline-block align-middle text-[#f62c73]">
+          We are a Full Service{" "}
+          <span className="h-[1.5em] overflow-hidden inline-block align-middle text-[#f62c73]">
             <ul className="slide_Text text-left">
               <li className="h-[1.4em] xl:text-[60px] lg:text-[48px] md:text-[36px] sm:text-[30px] font-bold">
                 Design
