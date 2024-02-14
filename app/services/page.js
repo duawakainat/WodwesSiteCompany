@@ -1,3 +1,4 @@
+
 import React from "react";
 import Image from "next/image";
 import ImageF from "@/public/ecommerce-4bcb686c.png";
@@ -5,7 +6,6 @@ import Image1 from "@/public/frontend-91b299e9.png";
 import Image2 from "@/public/software-56e9289c.png";
 import Image3 from "@/public/cms-5e08dfd2.png";
 import Link from "next/link";
-
 const navItems = [
   {
     category: "E-commerce Development",

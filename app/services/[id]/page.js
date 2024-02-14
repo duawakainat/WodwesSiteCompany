@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import { React, Component } from "react";
 import Image from "next/image";
 import { User } from "@/components/User";
@@ -101,11 +101,7 @@ const Page = ({ params }) => {
   function SamplePrevArrow(props) {
     const { onClick } = props;
     return (
-      <div
-        className="slick-prev_1"
-
-        onClick={onClick}
-      >
+      <div className="slick-prev_1" onClick={onClick}>
         <svg
           data-v-c0be6fb4=""
           xmlns="http://www.w3.org/2000/svg"
@@ -135,7 +131,7 @@ const Page = ({ params }) => {
       </div>
     );
   }
-  
+
   const settings3 = {
     dots: false,
     infinite: false,
@@ -273,7 +269,7 @@ const Page = ({ params }) => {
                   </ul>
                 </div>
               </div>
-              {menu.navItems  &&  (
+              {menu.navItems && (
                 <div>
                   <div className="w-[90%] mx-auto">
                     <h2 className="text-[30px] tracking-tighter mb-3 font-[700]">
@@ -283,14 +279,16 @@ const Page = ({ params }) => {
                       </span>
                     </h2>
                     <p className="text-[16px] mb-3 mt-4 text-[#272821]">
-                    We love hearing about how our work has helped businesses succeed and how WODWES became their go-to <br/>
-development team. Dont just take our word for it - read what our satisfied clients have to say!
+                      We love hearing about how our work has helped businesses
+                      succeed and how WODWES became their go-to <br />
+                      development team. Dont just take our word for it - read
+                      what our satisfied clients have to say!
                     </p>
                     <div className=" mb-6">
-          <a className="hover:bg-[#f62c73] hover:text-white border-2 border-[#f62c73] bg-transparent w-[200px] font-[600] py-3 px-5 flex justify-center items-center">
-            Let is Talk
-          </a>
-        </div>
+                      <a className="hover:bg-[#f62c73] hover:text-white border-2 border-[#f62c73] bg-transparent w-[200px] font-[600] py-3 px-5 flex justify-center items-center">
+                        Let is Talk
+                      </a>
+                    </div>
                   </div>
                   <Slider
                     asNavFor={nav2}
@@ -370,27 +368,26 @@ development team. Dont just take our word for it - read what our satisfied clien
                   <div className="w-[90%] mx-auto">
                     <div className="border-t-2 pb-12">
                       <Slider
-                        
                         asNavFor={nav1}
                         ref={(slider2) => setNav2(slider2)}
                         swipeToSlide={true}
                         focusOnSelect={true}
-                        {...settings3} 
+                        {...settings3}
                       >
                         {menu.SlideImage.map((items, index) => {
                           return (
-                              <div
-                                key={index}
-                                className="px-5 py-2 md:p-5 lg:p-7 xl:p-10 border-r"
-                              >
-                                <Image
-                                  src={items.img}
-                                  width={0}
-                                  height={0}
-                                  alt="image"
-                                  className="w-[270px] h-[90px] object-contain"
-                                />
-                              </div>
+                            <div
+                              key={index}
+                              className="px-5 py-2 md:p-5 lg:p-7 xl:p-10 border-r"
+                            >
+                              <Image
+                                src={items.img}
+                                width={0}
+                                height={0}
+                                alt="image"
+                                className="w-[270px] h-[90px] object-contain"
+                              />
+                            </div>
                           );
                         })}
                       </Slider>

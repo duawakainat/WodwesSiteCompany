@@ -1,7 +1,4 @@
-export const metadata = {
-  title: "Home Page Wodwes",
-  description: "Download more discription",
-};
+
 import React from 'react'
 import Section2 from './Section2'
 import Section3 from './Section3'
