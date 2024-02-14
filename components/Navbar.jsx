@@ -102,7 +102,7 @@ const Navbar = (props) => {
             <div className="flex sm:gap-6 gap-3">
               {" "}
               <div className="flex justify-center">
-                <a className="bg-[#f62c73] text-white border-2 border-[#f62c73] hover:bg-transparent font-[600] sm:py-3 py-2 sm:px-5 px-4 flex justify-center items-center">
+                <a className="bg-[#f62c73] text-white hover:text-black border-2 border-[#f62c73] hover:bg-transparent font-[600] sm:py-3 py-2 sm:px-5 px-4 flex justify-center items-center">
                   Contact Us
                 </a>
               </div>
