@@ -102,7 +102,7 @@ const NavbarToggle = () => {
       <div className="lg:flex lg:w-[90%] mx-auto lg:absolute lg:bg-white bg-[#f6f6f699] gap-10 lg:flex-row lg:justify-between flex-col lg:gap-[0.75rem] xl:px-[3.5rem] lg:px-[12px] lg:py-[4rem] xl:py-[64px] pt-6">
         {navItems.map((menu, index) => {
           return (
-            <div key={index} className="">
+            <div key={index} className="lg:mb-0 mb-5">
               <div className="space-y-4">
                 <div className="flex gap-1 ">
                   <Image

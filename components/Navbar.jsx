@@ -1,25 +1,51 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState , useEffect} from "react";
 import Image from "next/image";
 import Services from "@/app/services/page";
 
 import IndustryToogle from "./IndustryToogle";
 import NavbarToogle1 from "./NavbarToogle3";
 import Link from "next/link";
+
+
 const Navbar = (props) => {
   const [navToogle, setNavToogle] = useState(false);
   const [toogle, setToogle] = useState(false);
   const [industrytoogle, setIndustryToogle] = useState(false);
- const ToogleIndustry=()=>{
-  setIndustryToogle(!industrytoogle);
-  setToogle(false);
- }
- const ToogleServices=()=>{
-  setToogle(!toogle);
-  setIndustryToogle(false);
+  const ToogleIndustry=()=>{
+    setIndustryToogle(!industrytoogle);
+    setToogle(false);
+  }
+  const ToogleServices=()=>{
+    setToogle(!toogle);
+    setIndustryToogle(false);
+  }
+  const [bodyScroll, setBodyScroll] = useState(true);
+  
+  useEffect(() => {
+    const resetOnResize = () => {
+      if (window.innerWidth <= 1023) document.body.style.overflow = "hidden";
+      if (window.innerWidth >= 1024) document.body.style.overflow = "scrolls";
+    };
+  
+    if (!bodyScroll) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "scroll";
+      window.addEventListener("resize", resetOnResize);
+    }
+  
+    return () => {
+      window.removeEventListener("resize", resetOnResize);
+    };
+  }, [bodyScroll]);
+  const ToogleBody=()=>{
+  setNavToogle(!navToogle)
+  setBodyScroll(!bodyScroll)
  }
   return (
     <div className="z-50 sticky top-0 shadow-lg bg-white">
+     
       <div className=" bg-white">
         <div className="flex justify-between items-center mx-auto w-[90%] max-[335px]:w-[93%] lg:min-w-[992px]">
           <div className="py-4 ">
@@ -33,11 +59,11 @@ const Navbar = (props) => {
           </div>
           <div className="flex items-center xl:gap-[3rem] sm:gap-[1.5rem]">
             <ul className="lg:flex hidden items-center justify-center gap-[3rem] list-none">
-              <li className="text-[16px]">
+              <li className="text-[16px] cursor-pointer">
                 <Link href="/">Home</Link>{" "}
               </li>
               <li
-                className="text-[16px] flex justify-between gap-2 items-center"
+                className="text-[16px] cursor-pointer flex justify-between gap-2 items-center"
                 onClick={ToogleServices}
               >
                 Services
@@ -60,7 +86,7 @@ const Navbar = (props) => {
                 className="text-[16px] cursor-pointer flex justify-between gap-2 items-center"
                 onClick={ToogleIndustry}
               >
-                <Link href="">Industry</Link>
+                Industry
                 <svg
                   data-v-44cf1d57=""
                   xmlns="http://www.w3.org/2000/svg"
@@ -107,7 +133,7 @@ const Navbar = (props) => {
                 </a>
               </div>
             </div>
-            <div className="lg:hidden" onClick={() => setNavToogle(!navToogle)}>
+            <div className="lg:hidden cursor-pointer" onClick={ToogleBody}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="sm:w-11 w-10 sm:h-11 h-10"

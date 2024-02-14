@@ -26,6 +26,7 @@ const Page = ({ params }) => {
     slidesToShow: 6,
     slidesToScroll: 1,
     initialSlide: 0,
+    marginLeft: '0px',
     responsive: [
       {
         breakpoint: 1200,

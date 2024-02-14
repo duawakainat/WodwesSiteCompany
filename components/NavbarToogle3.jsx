@@ -5,6 +5,7 @@ import { useState } from "react";
 const NavbarToogle3 = () => {
   const [toogle, setToogle] = useState(false);
   const [industrytoogle, setIndustryToogle] = useState(false);
+  const [tectnogiestoogle, settectnogiesToogle] = useState(false);
   return (
     <div className="w-[100%] h-screen lg:hidden block overflow-y-auto pb-48 mx-auto z-10">
       {" "}
@@ -80,7 +81,7 @@ const NavbarToogle3 = () => {
               ? "bg-[#f6f6f699] text-[16px] cursor-pointer "
               : "bg-white text-[16px] cursor-pointer"
           }
-          onClick={() => setIndustryToogle(!industrytoogle)}
+          onClick={() => settectnogiesToogle(!tectnogiestoogle)}
         >
           <div className="flex justify-between gap-2 items-center">
             <span
@@ -104,7 +105,7 @@ const NavbarToogle3 = () => {
               ></path>
             </svg>
           </div>
-          {industrytoogle && <IndustryToogle />}
+          {tectnogiestoogle && <IndustryToogle />}
         </li>
         <li className="text-[16px]">Portfulio</li>
       </ul>

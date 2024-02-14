@@ -7,7 +7,15 @@
   font-family: "Poppins", sans-serif;
   font-weight: 400;
 }
-
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-thumb {
+  background: #f62c73;
+}
+::-webkit-scrollbar-track {
+  background: #000;
+}
 .slide_Text {
   display: inline-block;
   margin: 0;
@@ -120,4 +128,7 @@
 }
 .slickmain {
   border-right: 1px solid red;
+}
+.slick-track {
+  margin-left: 0px !important;
 }
