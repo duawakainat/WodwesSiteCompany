@@ -110,8 +110,9 @@ const Navbar = (props) => {
                   ></path>
                 </svg>{" "}
               </li>
-
-              <li className="text-[16px]">Portfulio</li>
+              <li className="text-[16px] cursor-pointer">
+                <Link href="/tectnolangies">Portfulio</Link>
+              </li>
             </ul>
             <div className="flex sm:gap-6 gap-3">
               {" "}

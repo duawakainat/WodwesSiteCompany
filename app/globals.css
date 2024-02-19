@@ -132,3 +132,21 @@
 .slick-track {
   margin-left: 0px !important;
 }
+
+.timeline {
+  display: inline-block;
+  list-style: none;
+  /* animation-name: Word_MoveY2;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+  animation-duration: 7s; */
+}
+  .timeline  {
+     width: 100%;
+  }
+@media (min-width: 300px) and (max-width: 998px) {
+    .timeline{
+      width: 3px;
+       height: 87%;
+    }
+}
