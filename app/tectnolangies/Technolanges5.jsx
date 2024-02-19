@@ -14,7 +14,7 @@ const Technolanges5 = () => {
           </h1>
           <p className="xl:text-[18px] text-[16px] lg:my-10 my-5 max-w-[637px] leading-8">
             At WODWES, we understand that technology is constantly evolving, and
-            we're committed to staying ahead of the curve. Whether you need a
+            we are committed to staying ahead of the curve. Whether you need a
             simple website or a complex web application, we have the expertise
             and experience to deliver innovative solutions that help you achieve
             your business goals.
