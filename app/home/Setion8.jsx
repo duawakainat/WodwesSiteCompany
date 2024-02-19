@@ -52,8 +52,8 @@ const Setion8 = () => {
       <div className="grid lg:grid-cols-1  xl:grid-cols-2 grid-cols-2 max-[578px]:grid-cols-1 gap-5">
         {Table.map((menu, index) => {
           return (
-            <div key={index}>
-              <div className="p-5 bg-[#f8f8f8] group/item group/edit group-hover/item:bg-[rgba(39,40,33 ,1]  rounded-[10px]">
+            <div key={index} className="p-5 group/item bg-[#f8f8f8] group/item hover:bg-[#272821] rounded-[10px]">
+              <div className="group/edit">
                 <Image
                   alt="image"
                   src="/full-stack-c89c521a.png"
@@ -61,8 +61,8 @@ const Setion8 = () => {
                   height={36}
                   className="w-9 h-9"
                 />
-                <h3 className="text-[18px] font-[700] my-5">{menu.h3Title}</h3>
-                <p className="text-[14px] text-[#272821]">{menu.para}</p>
+                <h3 className="text-[18px] group-hover/edit:text-white font-[700] my-5">{menu.h3Title}</h3>
+                <p className="text-[14px] group-hover/edit:text-white text-[#272821]">{menu.para}</p>
               </div>
             </div>
           );
