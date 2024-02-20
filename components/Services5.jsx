@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 const Services5 = ({ Development_H, Development_Para, image }) => {
   return (
-    <div className="p-5 group/item bg-[#f8f8f8] group/item hover:bg-[#272821] rounded-[10px]">
+    <div className="p-5 group/item transition duration-[.3s] border-[1px] border-gray-400/50 bg-[#f8f8f8] group/item hover:bg-[#272821] rounded-[10px]">
       <div className="group/edit">
         <Image
           alt="image"

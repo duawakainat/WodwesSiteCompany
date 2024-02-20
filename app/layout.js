@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
      
 
-      <body className={inter.className}>
+      <body className={inter.className} suppressHydrationWarning={true}>
       <div className="bg-black">
      <Section1/>  
      </div>

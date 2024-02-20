@@ -59,7 +59,7 @@ const IndustryToogle = () => {
                     height={16}
                     className="w-4 h-4"
                   />
-                  <p className="xl:text-[14px] tracking-[0.28px] lg:text-sm cool-link hover:text-[#f62c73]">
+                  <p className="xl:text-[14px] transition duration-[.2s] tracking-[0.28px] lg:text-sm cool-link hover:text-[#f62c73]">
                     {menu.para3}
                   </p>
                 </div>

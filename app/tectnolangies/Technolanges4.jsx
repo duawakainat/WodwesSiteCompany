@@ -1,37 +1,43 @@
-import React from "react";
+"use client";
+import React, { useState, useEffect } from "react";
 const Table = [
   {
-    index: "1",
+    index: 1,
     h3Title: "Provide Project Requirements",
     para:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
   },
   {
-    index: "2",
+    index: 2,
     h3Title: "Provide Project Requirements",
     para:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
   },
   {
-    index: "3",
+    index: 3,
     h3Title: "Provide Project Requirements",
     para:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
   },
   {
-    index: "4",
+    index: 4,
     h3Title: "Provide Project Requirements",
     para:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
   },
   {
-    index: "5",
+    index: 5,
     h3Title: "Provide Project Requirements",
     para:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
   },
 ];
 const Technolanges4 = () => {
+  // var campaignInfo = document.querySelectorAll(".timeline");
+  // console.log("hello");
+  // for (let i = 0; i < campaignInfo.length-2; i++) {
+  // campaignInfo.classList.add("addClass");
+  // }
   return (
     <div className="w-[90%] mx-auto">
       <div className="relative mt-10 pb-20">
@@ -60,33 +66,45 @@ const Technolanges4 = () => {
           </div>
         </div>
       </div>
-        <div className="grid lg:grid-cols-5">
-          {Table.map((menu, index) => {
-            return (
-              <div key={index} className="max-lg:flex gap-10 lg:max-w-[218px]">
-                <div className="">
+      <div className="grid lg:grid-cols-5 [&>:nth-child(1)]:text-black [&>:nth-child(2)]:text-black [&>:nth-child(3)]:text-black text-gray-400">
+        {Table.map((menu, index) => {
+          return (
+            <div key={index} className="max-lg:flex gap-10 lg:max-w-[218px]">
+              <div className="">
                 <div className="flex lg:justify-center lg:items-end">
-                  <p className="text-sm text-[#fff] bg-black flex justify-center items-center rounded-full w-[2.75rem] h-[2.75rem]">
+                  <p 
+                  className={ 
+                    menu.index === 1 ||  menu.index === 2 ||  menu.index === 3
+                      ? "text-sm text-[#fff] bg-black flex justify-center items-center rounded-full w-[2.75rem] h-[2.75rem]"
+                      : "text-sm text-[#fff] bg-gray-300 flex justify-center items-center rounded-full w-[2.75rem] h-[2.75rem]"
+                  }
+                  // className=
+                  // "text-sm text-[#fff] bg-black flex justify-center items-center rounded-full w-[2.75rem] h-[2.75rem]"
+                  >
                     {menu.index}
                   </p>
                 </div>
                 <div
                   className={
-                   ( menu.index === "5" || menu.index === "4" || menu.index === "3")
+                    menu.index === 5
                       ? "lg:w-0"
-                      : "lg:h-[3px] h-full lg:w-[91.5%] w-[3px] max-lg:mt-[5%] lg:-translate-y-9 max-lg:-translate-x-[-20px] -z-10 relative timeline lg:ml-[60%] bg-gray-300"
+                      : menu.index === 1 || menu.index === 2 ? "lg:h-[3px] bg-black h-full lg:w-[91.5%] w-[3px] max-lg:mt-[5%] lg:-translate-y-9 max-lg:-translate-x-[-20px] -z-10 relative timeline lg:ml-[60%]":
+                      "lg:h-[3px] h-full lg:w-[91.5%] w-[3px] bg-gray-400 max-lg:mt-[5%] lg:-translate-y-9 max-lg:-translate-x-[-20px] -z-10 relative timeline lg:ml-[60%]"
                   }
-                ></div></div>
-                <div className="lg:text-center max-lg:pb-9 lg:pl-0 sm:pl-10">
-                  <h3 className="xl:text-xl text-lg font-[700] mb-2.5">
-                    {menu.h3Title}
-                  </h3>
-                  <p className="xl:text-[14px] lg:text-xs text-sm max-lg:pb-10 text-[#272821]">{menu.para}</p>
-                </div>
+                ></div>
               </div>
-            );
-          })}
-        </div>
+              <div className="lg:text-center max-lg:pb-9 lg:pl-0 sm:pl-10">
+                <h3 className="xl:text-xl text-lg font-[700] mb-2.5">
+                  {menu.h3Title}
+                </h3>
+                <p className="xl:text-[14px] lg:text-xs text-sm max-lg:pb-10 ">
+                  {menu.para}
+                </p>
+              </div>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 };

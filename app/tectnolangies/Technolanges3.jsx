@@ -52,7 +52,7 @@ const Technolanges3 = () => {
       <div className="grid lg:grid-cols-12 w-[90%] mx-auto mt-14 sm:grid-cols-2 max-md:[&>*:nth-child(even)]:col-span-1 max-md:[&>*:nth-child(odd)]:col-span-1  lg:[&>*:nth-child(1)]:col-span-7 lg:[&>*:nth-child(2)]:col-span-5  lg:[&>*:nth-child(3)]:col-span-4 lg:[&>*:nth-child(5)]:col-span-4 lg:[&>*:nth-child(4)]:col-span-4  gap-5">
         {Table.map((menu, index) => {
           return (
-            <div key={index} className="p-5 group/item bg-[#f8f8f8] group/item hover:bg-[#272821] rounded-[10px]">
+            <div key={index} className="p-5 border-[1px] border-gray-400/50 group/item bg-[#f8f8f8] transition duration-[.3s] group/item hover:bg-[#272821] rounded-[10px]">
               <div className="group/edit">
               <Image
                   alt="image"

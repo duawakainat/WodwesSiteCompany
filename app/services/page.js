@@ -122,7 +122,7 @@ const NavbarToggle = () => {
                       <div key={index} className="">
                         <Link
                           href={`/services/${Element.link}`}
-                          className="xl:text-[14px] hover:text-[#f62c73] mt-4 tracking-[0.28px] lg:text-sm cool-link"
+                          className="xl:text-[14px] transition duration-[.2s] hover:text-[#f62c73] mt-4 tracking-[0.28px] lg:text-sm cool-link"
                         >
                           {Element.label}
                         </Link>
